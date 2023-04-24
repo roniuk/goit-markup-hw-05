@@ -24,7 +24,7 @@
             <a class="logoone link" href="./index.html">Web<span class="span-logo-header">Studio</span></a>
             <ul class="menu list">
              <li class="menu-item">
-                <a class="menu-link link" href="./index.html">Studio</a></li>
+                <a class="menu-link current link" href="./index.html">Studio</a></li>
              <li class="menu-item">
                 <a class="menu-link link"  href="./portfolio.html">Portfolio</a></li>
                 <li class="menu-item">
@@ -81,9 +81,18 @@
 <!--================================  SECTION PORFOLIO  1 ================-->
 
     <ul class="card-set list">
+
         <li class="port-item">
             <a class="port-link link" href="">
-              <img class="imgp" src="images/portfolio/BankingApp.jpg" alt="image">
+            <div class="portfolio-block">
+                   <img class="imgp" src="images/portfolio/BankingApp.jpg" alt="image" width="360" height="300">
+                <div class="overlay">
+                 <p class="paragraf-overlay">
+                  14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
+                  Cloud Storage App
+                 </p>
+                </div>
+            </div>
                 <div class="card-content">
                     <h2 class="card-heading">Banking App Interface Concept</h2>
                     <p class="card-text">App</p>
@@ -194,5 +203,11 @@
         </div>
         </div>
 </footer>
+<body>
+    <!-- Вся твоя розмітка, включно з розміткою модалки -->
+
+    <!-- Ставимо перед закриваючим тегом body -->
+    <script src="./js/modal.js"></script>
+</body>
 </body>
 </html>
