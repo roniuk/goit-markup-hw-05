@@ -13,7 +13,8 @@
         --clients-icon-color: #8E8F99;
         --socials: #31d0aa;
         --transition-duration-and-func: 250ms linear;
-        --animation: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        --animation: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+        --modal-color: #FCFCFC;
         }
 
 *,
@@ -97,7 +98,7 @@ h3 {
  /* ---------------------------------- PAGE - HEADER ------------ */
  
  .page-header {
-    border-bottom: 1px solid #e7e9fc;
+    /* border-bottom: 1px solid #e7e9fc; */
 
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
  }
@@ -192,9 +193,9 @@ margin-right: auto;
     bottom: 0;
     display: block;
     width: 100%;
-    height: 5px;
+    height: 4px;
     background-color: #404BBF;
-    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1); */
     border-radius: 2px;
 }
 /* /////////////////  INDEX - HTML   //////////////////////// */
@@ -202,7 +203,7 @@ margin-right: auto;
 .hero-image {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/people-office.jpg');
     max-width: 1440px;
-    height: 600px;
+    /* height: 600px; */
     background-position: center;
     margin-left: auto;
     margin-right: auto;
@@ -248,11 +249,14 @@ color: var(--base-wait-color);
 
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
+
+        
 }
 
 .btn:hover,
 .btn:focus {
     background-color: var(--ocean); 
+    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*  ////////////// --- -- INDEX -- SECTION 2 ---//////////////////  */
 
@@ -424,7 +428,7 @@ gap: 24px;;
     justify-content: center;
     width: 168px;
     height: 88px;
-    border: 1px solid var(--clients-icon-color);
+    border: 1px solid var(--clients-icon-color); 
     border-radius: 4px; 
     color: #8e8f99;
     transition: color var(--animation), border var(--animation);
@@ -434,8 +438,9 @@ gap: 24px;;
 
 .client-link:hover,
 .client-link:focus {
-    border: 1px solid #404bbf;
-    color:#404bbf;
+    border-color: 1px solid var(--ocean);
+    color: var(--ocean);
+   
 }
 
 .client-icons {
@@ -488,7 +493,7 @@ gap: 24px;;
     letter-spacing: 0.04em;
     cursor: pointer;
     border-radius: 4px;
-    transition: transform 500ms linear;
+    /* transition: transform 500ms linear; */
 }
 
 .btn-port:hover,
@@ -501,7 +506,10 @@ gap: 24px;;
 
 
 /*   //////////  PORTFOLIO  SECOND-SECTION   ////////  */
+.port-item {
+    display: flex;
 
+}
 
 .card-set {
     display: flex;
@@ -511,11 +519,18 @@ gap: 24px;;
     row-gap: 48px;
 }
 
+/* .port-link {
+    transition: box-shadow var(--animation);
+} */
 .port-link:hover .paragraf-overlay,
 .port-link:focus .paragraf-overlay {
-box-shadow:0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
-transform: translate(0, 0); 
-}
+transform: translate(0, 0);   
+} 
+ 
+.port-link:hover,
+.port-link:focus {
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
+} 
 
 .card-content {
     padding: 32px 16px;
@@ -546,33 +561,43 @@ transform: translate(0, 0);
 
 .portfolio-block {
     position: relative;
-    overflow: hidden;
-}
+    overflow: hidden; 
+} 
+
 
 .paragraf-overlay {
-    position: absolute;
+    display: flex;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    overflow: auto; 
-    transform: translate(0, 100%);
-    transition: transform 500ms linear; 
-
-        text-align: center;
-        color: var(--cloud);
-        padding-right: 32px;
-        padding-left: 32px;
-        padding-top: 40px;
-        /* padding-bottom: 164px; */
+position: absolute;
+text-align: left;
+color: var(--cloud);
+background: var(--iris);
+padding: 40px 32px;
+transform: translate(0, 100%);
+transition: transform var(--animation);
+}
+            /* ;
+            color: #F4F4FD;
+           
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.02em; */
+    /* ; 
+    overflow: auto;  */
+     /* color: var(--cloud);
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
-        font-size: 16px;
-        line-height: 24px;
         letter-spacing: 0.02em;
-        background: var(--iris);
-}
+        font-size: 16px;
+        line-height: 1.5;  */
+
 
 /*  ////////////////   FUTER  ///////////////////  */
 
@@ -668,7 +693,7 @@ display: inline-block;
     gap: 16px;
     align-items: center;
     justify-content: center;
-    transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } 
 
 .soc-link:hover,
@@ -685,7 +710,7 @@ display: inline-block;
     gap: 16px;
     align-items: center;
     justify-content: center;
-    transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color  var(--animation);
 }
 
 .socials-link:hover,
@@ -720,6 +745,7 @@ display: inline-block;
 .backdrop.is-hidden {
     opacity:0;
     visibility:hidden;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     pointer-events: none;
 }
 
@@ -730,13 +756,15 @@ display: inline-block;
     transform: translate(-50%, -50%);
     width: 408px;
     height: 584px;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--modal-color);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
 }
  
 .modal-close-btn {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 24px;
+    right: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -745,9 +773,11 @@ display: inline-block;
     border-radius: 50%; 
     background-color: #E7E9FC;
     border: 1px solid rgba(0, 0, 0, 0.1);
-
-        /* opacity: 1;
-        transition: transform var(--animation) cubic-bezier(0.4, 0, 0.2, 1),
-            opacity var(--animation) cubic-bezier(0.4, 0, 0.2, 1);
-        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2); */
 }  
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+    background-color: #868ed4;
+    transition: color 250 linear 
+
+}
