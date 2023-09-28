@@ -447,14 +447,14 @@
                 <label class="footer-form-field">
 
                     <!-- <span class="modal-form-wrapper"> -->
-                    <input id="email" type="text" class="footer-form-input" placeholder="E-mail" required
+                    <input name="footer-form-email" id="email" type="email" class="footer-form-input" placeholder="E-mail" required
                         pattern="^[a-z]+">
                     <!-- <span class="madal-form-input-desk">E-mail</span> -->
                     <!-- </span> -->
                 </label>
 
                 <button class="footer-button-subscribe">Subscribe
-                    <svg width="24" height="24">
+                    <svg class="telegramm" width="24" height="24">
                         <use href="./images/icons.svg#icon-telegramm-1"></use>
                     </svg>
                 </button>
@@ -475,7 +475,7 @@
 
         <!--   clouse button -->
         <button type="button" class="modal-close-btn" data-modal-close>
-            <svg class="model-close-btn-icon" width="18" height="18">
+            <svg class="model-close-btn-icon" width="8" height="8">
                 <use href="./images/icons.svg#icon-close-black"></use>
             </svg>
         </button>
@@ -485,14 +485,17 @@
 
         <form class="modal-form">
             <div class="modal-field">
-                <label class="modal-form-field">
+                <label class="modal-form-field" for="user-name">
                     <span class="madal-form-input-desk">Name</span>
                     <span class="modal-form-wrapper">
-                        <input type="text" name="user_name" class="modal-form-input" required pattern="^[a-zA-Zа-яА-Я]+"
+
+                        <div class="input-mod">
+                        <input type="text" id="user_name" name="user-name" class="modal-form-input" required pattern="^[a-zA-Zа-яА-Я]+"
                             minlength="2">
                         <svg class="modal-form-icon" width="12" height="12">
                             <use href="./images/icons.svg#icon-name-1"></use>
-                        </svg>  
+                        </svg>
+                        </div>
 
 
 
