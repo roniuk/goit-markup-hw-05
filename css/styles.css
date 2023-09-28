@@ -789,10 +789,6 @@ border-radius: 0px 0px 4px 4px;
 
 }
 
-.model-close-btn-icon {
-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .model-close-btn-icon:hover,
 .model-close-btn-icon:focus {
     fill: #ffffff;
