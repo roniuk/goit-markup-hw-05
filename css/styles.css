@@ -439,18 +439,7 @@ border-radius: 0px 0px 4px 4px;
 
 /*   //////////  PORTFOLIO  SECOND-SECTION   ////////  */
 
-.port-item {
-    /* display: flex; */
-    /* transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); */
-    /* box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); */
 
-}
-
-
-.port-item:hover {
-   
-    /* box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); */
-}
 .card-set {
     display: flex;
     /* align-items: center; */
@@ -669,7 +658,6 @@ border-radius: 0px 0px 4px 4px;
   }
 
 .footer-form-input {
-
     font-weight: 400;
     font-size: 12px;
     line-height: 1.5;
@@ -787,8 +775,6 @@ border-radius: 0px 0px 4px 4px;
     /* fill: #ffffff;  */
     /* border: none;  */
 
-}
-
 .model-close-btn-icon {
 transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -857,7 +843,6 @@ margin-bottom: 8px;
     transition: border-color 250ms var(--navy-blue), fill 250ms var(--navy-blue);
 
     background-color: transparent;
-    name="user-name";
 }
 
 .modal-form-icon {
@@ -887,22 +872,19 @@ margin-bottom: 8px;
 
 
 .modal-form-message {
-
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     margin-bottom: 16px;
     color: var(--navy-blue);
-    /* identical to box height, or 117% */
+
     padding-top: 8px;
     padding-right: 8px;
     padding-bottom: 8px;
     padding-left: 16px;
     letter-spacing: 0.04em;
-    /* color: rgba(46, 47, 66, 0.4); */
-
-    /* outline: none; */
+  
     resize: none;
     width: 100%;
     min-height: 120px;
@@ -928,11 +910,9 @@ margin-bottom: 8px;
     width: 16px;
     height: 16px;
     content: " ";
-
     border-radius: 2px;
     margin-right: 12px;
     border: 1px solid rgba(46, 47, 66, 0.4);
-
     transition: border 2000 cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -942,17 +922,9 @@ margin-bottom: 8px;
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
-    /* padding-left: 24px; */
     margin-bottom: 24px;
     letter-spacing: 0.04em;
-
-
     cursor: pointer;
-
-    /* LIGHT SLATE */
-
-    /* color: #8E8F99;
-color: var(--ocean); */
 }
 
 .modal-form-check:checked+.modal-form-check-desc::before {
