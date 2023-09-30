@@ -743,7 +743,6 @@ border-radius: 0px 0px 4px 4px;
     background-color: var(--modal-color);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
@@ -764,21 +763,13 @@ border-radius: 0px 0px 4px 4px;
     padding: 0;
     cursor: pointer;
     fill: #2E2F42;
-    /* transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
-
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-btn:hover {
-    background-color: red;
-        fill: #ffffff;  
-        border: none;
-}
-
+.modal-close-btn:hover,
 .modal-close-btn:focus {
-    background-color: red; 
-    /* fill: #ffffff;  */
-     border: none;  
+    fill: #ffffff;
+    background-color: #404bbf;
 }
 
 .model-close-btn-icon {
@@ -786,32 +777,26 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* .model-close-btn-icon:hover,
-.model-close-btn-icon:focus {
-    fill: #ffffff;
-    
-}  */
-
-
-.modal-field {
-margin-bottom: 8px;
-}
-
-.input-mod {
-    position: relative;
-
-}
-/* ===========  modal-form  ============ */
-
+.model-close-btn-icon:focus { */
+    /* fill: #ffffff; */
+    /* fill: green;
+    border: none;   
+    background-color: #404bbf;
+}   */
 
 .text-modal {
     font-weight: 500;
     text-align: center;
     color: var(--navy-blue);
-
-    /* padding: 72px 24px 0 24px;  */
     margin-bottom: 16px;
-
 }
+
+/* ===========  modal-form  ============ */
+
+.modal-field {
+    margin-bottom: 8px;
+}
+
 
 .modal-form-field {
     display: block;
@@ -823,19 +808,6 @@ margin-bottom: 8px;
     margin-bottom: 4px;
 }
 
-
-.madal-form-input-desk {
-    display: block;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.2;
-    color: #8E8F99;
-    margin-bottom: 4px;
-}
-
-.modal-form-wrapper {
-    position: relative;
-}
 
 .modal-form-input {
     outline: transparent;
@@ -870,9 +842,9 @@ fill: #4D5AE5;
 }
 /*  !!!!!!!!!!!!!!!!!!!!! */
 
-.modal-form-input:hover+.modal-form-icon {
+ .modal-form-input:hover+.modal-form-icon {
     fill: var(--iris);
-}
+} 
 
 .modal-form-input:focus {
     border-color: #4D5AE5;
@@ -882,7 +854,7 @@ fill: #4D5AE5;
     border-color: #4D5AE5;
 }
 
-
+/*    textarea     */
 
 .modal-form-message {
     font-family: 'Roboto';
