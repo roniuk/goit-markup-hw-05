@@ -731,6 +731,8 @@ border-radius: 0px 0px 4px 4px;
 
 .backdrop .is-hidden .modal  .is-open{
     opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
 }
 
 .modal {
@@ -928,7 +930,7 @@ border-radius: 0px 0px 4px 4px;
 
 .modal-form-message:hover,
 .modal-form-message:focus {
-    outline: none;
+    /* outline: none; */
     border-color: #4D5AE5;
 }
 
