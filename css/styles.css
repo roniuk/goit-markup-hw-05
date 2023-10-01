@@ -737,8 +737,8 @@ border-radius: 0px 0px 4px 4px;
 
  .backdrop .is-open{
     opacity: 1;
-    visibility: hidden;
-    pointer-events: none;
+    visibility: visible;
+    
 } 
 
 .modal {
