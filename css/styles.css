@@ -729,11 +729,17 @@ border-radius: 0px 0px 4px 4px;
     pointer-events: none;
 }
 
-.backdrop .is-hidden .modal  .is-open{
+/* .backdrop .is-hidden .modal .is-open{
     opacity: 0;
         visibility: hidden;
         pointer-events: none;
-}
+} */
+
+ .backdrop .is-open{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+} 
 
 .modal {
     position: absolute;
