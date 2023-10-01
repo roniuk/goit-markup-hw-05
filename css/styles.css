@@ -788,6 +788,11 @@ border-radius: 0px 0px 4px 4px;
     margin-bottom: 8px;
 }
 
+.modal-field-textarea {
+    margin-bottom: 16px;
+}
+
+
 .input-class {
     position: relative;
 }
@@ -960,7 +965,7 @@ margin-bottom: 24px;
     align-items: center;
     font-weight: 400;
     font-size: 12px;
-    line-height: 14px;
+    line-height: 1.17;
     /* padding-left: 24px; */
     margin-bottom: 24px;
     letter-spacing: 0.04em;
@@ -968,10 +973,8 @@ margin-bottom: 24px;
 
     cursor: pointer;
 
-    /* LIGHT SLATE */
-
-    /* color: #8E8F99;
-color: var(--ocean); */
+     color: #8E8F99;
+ 
 }
 
 .modal-form-check:checked+.modal-form-check-desc::before {
