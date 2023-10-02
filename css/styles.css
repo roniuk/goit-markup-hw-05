@@ -734,7 +734,7 @@ border-radius: 0px 0px 4px 4px;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-}    
+}     
 
 
 /* 
@@ -742,7 +742,7 @@ border-radius: 0px 0px 4px 4px;
      opacity: 0;
      visibility: hidden;
      pointer-events: none;
- } */
+ }  */
 
 .modal {
     position: absolute;
