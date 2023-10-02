@@ -724,7 +724,7 @@ border-radius: 0px 0px 4px 4px;
 }
 
  
-.is-open {
+.backdrop.is-open {
      opacity: 0;
      visibility: hidden;
  }  
