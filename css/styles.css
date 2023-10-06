@@ -1007,10 +1007,59 @@
 
  }
 
- .modal-form-check:fokus+.modal-form-check-desc::before {
+ /* .modal-form-check:fokus+.modal-form-check-desc::before { */
      /* outline: 2px solid var(--iris);  */
-     background-size: 10px;
+     /* background-size: 10px;
 
+ } */
+
+
+ .modal-form-checkbox-input:checked+.modal-form-terms .modal-form-terms-pp {
+     background-color: #404bbf;
+     border: none;
+     fill: #f4f4fd;
+ }
+
+ .modal-form-checkbox {
+     margin-bottom: 24px;
+ }
+
+ .modal-form-checkbox-input {
+     width: 16px;
+     height: 16px;
+ }
+
+ .modal-form-terms {
+     font-size: 12px;
+     line-height: 1.17;
+     letter-spacing: 0.04em;
+     color: #8E8F99;
+     font-family: 'Roboto', sans-serif;
+ }
+
+ .modal-form-terms-pp {
+     width: 16px;
+     height: 16px;
+     border: 1px solid rgba(46, 47, 66, 0.4);
+     border-radius: 2px;
+     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     display: inline-flex;
+     flex-direction: row-reverse;
+     align-items: center;
+     justify-content: center;
+     fill: transparent;
+     margin-right: 8px;
+ }
+
+ .modal-form-checkbox-input:checked+.modal-form-terms .modal-form-terms-pp {
+     background-color: #404bbf;
+     border: none;
+     fill: #f4f4fd;
+ }
+
+ .modal-form-terms-pp-link {
+     color: #4D5AE5;
+     text-decoration: underline;
  }
 
  /* .modal-form-submit { */
